@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Weighting" pageWidth="500" pageHeight="350" orientation="Landscape" columnWidth="460" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3c3565af-3f49-439f-9e60-c2d67a619196">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="Parameter3" class="java.lang.String"/>
+	<parameter name="Parameter4" class="java.lang.String"/>
+	<parameter name="Parameter5" class="java.lang.String"/>
+	<parameter name="Parameter6" class="java.lang.String"/>
+	<parameter name="BarcodeParameter" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="459" height="40" uuid="6d553d15-2de9-412c-a1b8-4efb285f4dff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="57" splitType="Stretch">
+			<componentElement>
+				<reportElement x="99" y="0" width="260" height="30" uuid="84b05c21-5434-4ced-a995-b8a832d64b02"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$P{BarcodeParameter}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="151" y="30" width="159" height="20" uuid="3241641f-3dfe-4dc6-98d7-53336ecb5099"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{BarcodeParameter}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="80" height="30" uuid="7a85bc73-d5c4-47dd-aa60-30cc0313b998"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[MNF Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="15" width="80" height="30" uuid="66cb021b-0d53-43ca-ba78-c265d7796bd2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[EXP Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="15" width="140" height="30" uuid="cc0927ee-b81b-4fb3-bad9-558da77dc1e1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="15" width="139" height="30" uuid="e5d024a3-77a6-48eb-972b-c638882a21b7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="110" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="140" height="79" uuid="cdf36c99-075c-4fd1-8030-9cef108ef33b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="160" y="0" width="140" height="78" uuid="bc5cee3e-66ae-4bff-8784-660100db5cea"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="320" y="0" width="139" height="79" uuid="50341fb9-c509-47bd-8b70-4a27b8be14b2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="10" width="120" height="20" uuid="77832f90-b00a-47c0-82d8-6691a985aa75"/>
+				<textElement textAlignment="Center">
+					<font size="14" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Unit Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="10" width="120" height="20" uuid="92547e82-2607-49ca-8204-1f1bd86710e6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Weight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="10" width="120" height="20" uuid="096a9a5f-b23b-44fb-b64b-b4a46fb3d31d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Total Price]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="30" width="120" height="40" uuid="31da87b0-6404-455e-9d50-bf3cfc8acf54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="30" width="120" height="40" uuid="d13bd900-e4e9-4ee5-bcc5-c6823212c6f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="30" width="120" height="40" uuid="bbe8a8a1-affb-453a-98da-4cb031000cd7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Parameter6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="90" width="460" height="20" uuid="99d6e4a2-0733-4b9b-b253-5473cc46190c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Freshmart Supermarket - Gampaha]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

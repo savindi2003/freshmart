@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-01-17T20:00:37.535357200Z</date>
+  <millis>1737144037535</millis>
+  <nanos>357200</nanos>
+  <sequence>0</sequence>
+  <logger>log1</logger>
+  <level>WARNING</level>
+  <class>gui.SignIn</class>
+  <method>jButton1ActionPerformed</method>
+  <thread>20</thread>
+  <message>java.lang.ArithmeticException: / by zero</message>
+</record>
+Jan 21, 2025 1:31:09 PM gui.Income loadSummary
+WARNING: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+Jan 21, 2025 1:31:20 PM gui.Income loadSummary
+WARNING: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
+Jan 22, 2025 5:38:20 PM gui.Income loadSummary
+WARNING: java.lang.NullPointerException: Cannot invoke "String.trim()" because "in" is null
