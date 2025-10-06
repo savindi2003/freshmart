@@ -42,6 +42,16 @@ The FreshMart POS system provides comprehensive functionalities across multiple 
 
 ---
 
+## ⚠️ Exception Handling & Logging
+
+FreshMart implements **exception handling** throughout the application to ensure smooth operation.  
+
+- All runtime errors, SQL exceptions, and unexpected events are **caught and logged**.  
+- Logs are saved in a **log file** (`log.txt`) for debugging and maintenance.  
+- This helps in monitoring system behavior, troubleshooting issues, and maintaining data integrity.  
+
+---
+
 ## 🛠️ Tech Stack
 
 | Component | Technology |
